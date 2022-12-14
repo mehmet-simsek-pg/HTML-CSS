@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="result.html">
+      <!--TEXT-->
+      <div>
+        <!--* label for and input id should be same-->
+        <label for="name">Firstname</label>
+        <br />
+        <input
+          id="name"
+          type="text"
+          name="input firstname"
+          value=""
+          placeholder="Enter your firstname"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="name">Lastname</label>
+        <br />
+        <input
+          id="name"
+          type="text"
+          name="input lastname"
+          value=""
+          placeholder="Enter your lastname"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <br />
+        <input
+          id="password"
+          type="password"
+          name="input password"
+          value=""
+          placeholder="Enter your password"
+          value=""
+          minlength="4"
+          maxlength="8"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label>Gender</label>
+        <br />
+
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" value="male" checked />
+
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender" value="female" />
+
+        <label for="diverse">Diverse</label>
+        <input id="diverse" type="radio" name="gender" value="diverse" />
+      </div>
+      <br />
+      <!--* CHECKBOX-->
+      <div>
+        <label>Choose your favorite car</label>
+        <br />
+        <label for="bmw">BMW</label>
+        <input id="bmw" type="checkbox" name="car_bmw" value="bmw" />
+
+        <label for="mercedes">Mercedes</label>
+        <input
+          id="mercedes"
+          type="checkbox"
+          name="car_mercedes"
+          value="mercedes"
+        />
+
+        <label for="citroen">Citroen</label>
+        <input
+          id="citroen"
+          type="checkbox"
+          name="car_citroen"
+          value="citroen"
+        />
+
+        <label for="audi">Audi</label>
+        <input id="audi" type="checkbox" name="car_audi" value="audi" />
+      </div>
+      <br />
+
+      <!--* NUMBER-->
+      <div>
+        <label for="age">Age</label>
+        <br />
+        <input type="number" name="age_input" id="age" value="0" step="2" />
+      </div>
+      <br />
+
+      <!--* SEARCH-->
+      <div>
+        <label for="search">Search</label>
+        <br />
+        <input id="search" type="search" name="search_value" />
+        <button>Search</button>
+      </div>
+      <br />
+
+      <!--* COLOR-->
+      <div>
+        <label for="color">Color</label>
+        <input id="color" type="color" name="color_value" value="#1EC6DC" />
+      </div>
+      <br />
+
+      <!--* DATE-->
+      <div>
+        <label for="birthday">Birthday</label>
+        <input id="birthday" type="date" name="date_input" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="folder">Select file</label>
+        <br />
+        <input type="file" name="select_folder" id="folder" />
+      </div>
+
+      <br />
+
+      <!--* TEL -->
+      <div>
+        <label for="telephone">Telephone</label>
+        <br />
+        <input
+          type="tel"
+          id="telephone"
+          name="telephone_input"
+          placeholder="XXX-XXX-XX-XX"
+          pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+        />
+      </div>
+
+      <br />
+
+      <!--* SELECT-GROUP-->
+      <div>
+        <label for="desserts">What desserts do you like?</label>
+        <br />
+        <select name="desserts_value" id="desserts">
+          <optgroup label="Serbetli tatlilar">
+            <option value="Baklava">Baklava</option>
+            <option value="Havuc Dilimi">Havuc Dilimi</option>
+            <option value="Künefe">Künefe</option>
+          </optgroup>
+
+          <optgroup label="Sütlü tatlilar">
+            <option value="Muhallebi">Muhallebi</option>
+            <option value="Kazandibi">Kazandibi</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br />
+      <!-- datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
+      <!-- DATALIST -->
+      <div>
+        <label for="fav">Favorite ice?</label> <br />
+        <input list="dondurmalar" id="fav" name="fav-dondurma" />
+        <datalist id="dondurmalar">
+          <!-- input list ile datalist in id si aynı olmalı ki liste çıksın -->
+          <option value="Cikolatali"></option>
+          <option value="Limonlu"></option>
+          <option value="Cilekli"></option>
+          <option value="Fistikli"></option>
+          <option value="Vanilya"></option>
+        </datalist>
+      </div>
+      <br />
+
+      <!--* TEXTAREA-->
+      <div>
+        <label for="comment">Comment</label>
+        <br />
+        <textarea
+          name="comment"
+          id="comment"
+          cols="10"
+          rows="10"
+          placeholder="Enter your comment"
+          style="resize: none"
+        ></textarea>
+      </div>
+
+      <!--* BUTTON-->
+      <div>
+        <input type="submit" />
+        <input type="reset" />
+        <input type="button" value="Save" />
+      </div>
+    </form>
+  </body>
+</html>
