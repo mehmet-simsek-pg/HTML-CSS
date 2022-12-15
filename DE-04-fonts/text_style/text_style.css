@@ -1,0 +1,41 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  color: #78cc33;
+  text-align: center;
+
+  /* line-through=yazının üstünü çizmek,underline=altını, overline=üstünü */
+  text-decoration: underline;
+
+  text-decoration: overline underline 10px wavy blue;
+
+  text-transform: uppercase;
+
+  word-spacing: 45px;
+}
+
+p {
+  text-indent: 20px;
+  line-height: 30px;
+}
+
+li {
+  background-color: #78cc33;
+}
+
+.desserts {
+  list-style-position: inside;
+
+  list-style-type: square;
+  list-style-type: "💘";
+
+  list-style-image: url(../../assets/img/arrow-right-long-solid.svg);
+}
+
+h3 {
+    text-align: end;
+
+    direction: rtl;
+}

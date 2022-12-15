@@ -1,0 +1,29 @@
+.home {
+  font-family: "Rubik Gemstones", cursive;
+  background-color: black;
+  color: white;
+}
+
+.price {
+  font-family: "Silkscreen";
+  background-color: aqua;
+}
+
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.course {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: grey;
+  color: black;
+}
+
+.contact {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blueviolet;
+    color: black;
+}
