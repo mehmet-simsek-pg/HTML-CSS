@@ -1,0 +1,45 @@
+* {
+  /* margin: 0;*/
+}
+/*!
+margin leri 0 larsak % ve viewport ölçüleri hemen hemen aynı görünür. sadece % parent ına göre şekillenir yani parent 500px olsun child a 50% dersek 250px olur. ama parent 500px iken child a 50vw dersek tüm ekranın (mesela 100 px lik bir ekransa) yarısını alır, parent ın ne olduğuyla ilgilenmez. margin 0 lamazsak 50%, kullanılan ekranın (margin lerden arta kalan ekranın) yarısını alır, 50vw ise tüm ekranın yarısını alır. mesela ekran 1000px olsun marginler 50-50 100 olsun, % ifadesi kalan 900 ün yüzdesini alır, vw ifadesi 1000px in yüzdesini alır
+*/
+
+.dede {
+  background-color: orange;
+  width: 50%;
+  height: 50vh;
+}
+
+.baba {
+  background-color: red;
+  width: 50%;
+  height: 50vh;
+}
+
+.torun {
+  background-color: aqua;
+  width: 50vw;
+  height: 50vh;
+}
+
+.anane {
+  color: red;
+  font-size: 3em;
+}
+
+.anne {
+  font-size: 0.5em;
+}
+
+.cocuk {
+  font-size: 3em;
+}
+
+.div1 {
+  font-size: 2rem;
+}
+
+.div2 {
+  font-size: 2rem;
+}
