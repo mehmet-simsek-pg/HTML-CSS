@@ -1,0 +1,43 @@
+.btn {
+  background-color: beige;
+  /* margin-top:2rem;
+ margin-bottom:1rem;
+ margin-right: 3rem;
+ margin-left: 2rem; */
+  margin: 2rem 3rem 1rem 2rem;
+  /* top-right-bottom-left */
+  margin: 2rem 3rem;
+  /* alt-üst=2rem  sag-sol =3rem */
+  padding: 1rem;
+}
+
+.span-btn {
+  background-color: burlywood;
+
+  /* width:3rem;
+height:3rem; */
+  /* inline elementler width height alamaz */
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
+  /* inline elementler sağ-sol margin alırlar ama alt-üst margin almazlar */
+
+  /* padding:3rem; */
+  /* inline elementler padding alır ama komşularının alanına müdehale ettiği için alt-üst padding tercih edilmez */
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.new-btn {
+  background-color: crimson;
+
+  width: 20vw;
+  height: 20vh;
+
+  padding: 1rem 2rem;
+
+  margin: 2rem auto;
+
+}
