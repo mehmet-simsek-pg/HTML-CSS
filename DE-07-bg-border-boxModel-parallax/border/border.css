@@ -1,0 +1,46 @@
+.msg3 {
+  border-right: 3px dotted red;
+}
+
+.msg4 {
+  border: 10px inset red;
+}
+
+.msg5 {
+  border: 5px dashed blue;
+  background-color: red;
+  border-radius: 5px 0;
+  padding: 1rem;
+}
+
+.msg6 {
+  border: 15px groove salmon;
+  background-color: hsl(81, 68%, 53%);
+
+  outline: 15px groove cyan;
+  outline-offset: 50px;
+}
+
+.msg7 {
+  border: 15px ridge salmon;
+  border-radius: 30%;
+}
+
+.msg8 {
+    border: 5px solid purple;
+    border-radius: 50%;
+
+    padding: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.seffaf {
+    background-image: url("../../assets/monalisa.jpeg");
+    border: 7px solid;
+}
+/*! border outline farkları */
+/* 1)border, border-radius özelliği ile yuvarlatılmış köşeleri destekler  outline yapmaz. */
+/* 2)border la istersek Yalnızca bir tarafı şekillendirme vardır, outline da yok */
+/* 3)outline,  -offset özelliğiyle offset'i (border ve outline arası boşluk) destekler  */
+/* 4)border, kutu modelinin bir parçasıdır, bu nedenle öğenin boyutuna göre sayılır, büyüdükçe komşusunu iter. outline, kutu modelinin bir parçası olmadığı için yakındaki öğeleri etkilemez, üstüne çıkar*/
